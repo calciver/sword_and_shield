@@ -44,10 +44,11 @@ def find_pokemon_rarity_ability(name_box):
 def parse_rarity(rarity_entry):
     all_rarities = rarity_entry.find_all('td')
     for each_rarity_info in all_rarities:
-        print(each_rarity_info)
-        for b in each_rarity_info.find_all('b'):
-            if b.next_sibling:
-                print(b.next_sibling)
+        # print(each_rarity_info)
+        # for b in each_rarity_info.find_all('b'):
+        #     if b.next_sibling:
+        #         print(b.next_sibling)
+        print('Rarity')
         for br in each_rarity_info.find_all('br'):
             if br.next_sibling:
                 print(br.next_sibling)
